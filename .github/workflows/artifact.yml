@@ -10,9 +10,9 @@ jobs :
     runs-on : ubunntu-latest
     steps :
       - name : Check out hte code
-        useS : actions/checkout@v2
+        uses : actions/checkout@v2
       - name : Upload the artifact
-        useS : actions/upload-artifact@v2
+        uses : actions/upload-artifact@v2
         with :
           name : ${{env.ARTIFACT_NAME}}
           PATH : .
